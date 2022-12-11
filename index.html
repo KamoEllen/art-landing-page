@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Art Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background-image: url('https://source.unsplash.com/random/1600x900');
+      background-size: cover;
+      background-position: center;
+      height: 900px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 72px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease-out;
+    }
+
+    .hero p {
+      font-size: 24px;
+      color: white;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1s ease-out;
+      animation-delay: 0.5s;
+    }
+
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 20px;
+      padding: 40px;
+    }
+
+    .art-grid img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Welcome to My Art Gallery</h1>
+    <p>Here you will find a collection of my best pieces.</p>
+  </div>
+  <div class="art-grid">
+    <img src="https://source.unsplash.com/random/400x400" alt="">
+    <img src="https://source.unsplash.com/random/401x401" alt="">
+    <img src="https://source.unsplash.com/random/402x402" alt="">
+    <img src="https://source.unsplash.com/random/403x403" alt="">
+    <img src="https://source.unsplash.com/random/404x404" alt="">
+    <img src="https://source.unsplash.com/random/405x405" alt="">
+    <img src="https://source.unsplash.com/random/406x406" alt="">
+    <img src="https://source.unsplash.com/random/407x407" alt="">
+  </div>
+</body>
+</html>
